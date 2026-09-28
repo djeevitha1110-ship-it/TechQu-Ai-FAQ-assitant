@@ -1,0 +1,25 @@
+{
+  "name": "ai-faq-assistant",
+  "version": "1.0.0",
+  "description": "AI FAQ Assistant - Your intelligent knowledge workspace",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm install && npm run build && node -e \"require('fs').cpSync('dist', '../dist', {recursive: true})\"",
+    "dev": "npx concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "faq",
+    "ai",
+    "groq",
+    "express",
+    "vite",
+    "react"
+  ],
+  "author": "Antigravity",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.4"
+  }
+}

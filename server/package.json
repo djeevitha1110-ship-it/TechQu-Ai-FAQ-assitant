@@ -1,0 +1,22 @@
+{
+  "name": "ai-faq-assistant-server",
+  "version": "1.0.0",
+  "description": "AI FAQ Assistant REST API Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": ["faq", "ai", "groq", "express", "mongoose"],
+  "author": "Antigravity",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.3.1",
+    "express": "^4.21.2",
+    "groq-sdk": "^0.36.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.3.0"
+  }
+}
